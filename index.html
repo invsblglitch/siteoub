@@ -91,7 +91,7 @@
 
         /* Hero Section */
         .hero {
-            height: 100vh;
+            height: 50vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -135,7 +135,7 @@
             margin-bottom: 30px;
         }
 
-        .hero button {
+        button {
             padding: 15px 30px;
             border: none;
             border-radius: 8px;
@@ -415,21 +415,11 @@
         <div class="nav-container">
             <div class="nav-logo">Nobo AI</div>
             <div class="nav-links">
-                <a href="#hero">Home</a>
-                <a href="#demo">Demo</a>
-                <a href="#waitlist">Waitlist</a>
+                <button onclick="document.getElementById('waitlist').scrollIntoView({ behavior: 'smooth' })">Join the Waitlist</button>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <h1>Welcome to Nobo AI</h1>
-            <p>Revolutionizing front-end development with cutting-edge AI technology. Enhance your web projects with intelligent design and seamless integration.</p>
-            <button onclick="document.getElementById('waitlist').scrollIntoView({ behavior: 'smooth' })">Join the Waitlist</button>
-        </div>
-    </section>
 
     <!-- Demo Video Section -->
     <section class="demo-video" id="demo">
@@ -439,23 +429,7 @@
 
     <!-- Waitlist Form Section -->
     <section class="waitlist" id="waitlist">
-        <div class="waitlist-container">
-            <h2>Join the Waitlist</h2>
-            <form id="waitlistForm" action="https://formspree.io/f/xpwzpqnj"
-            method="POST"
-          >
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                </div>
-                <button type="submit">Join Now</button>
-                <div class="success-message" id="successMessage">Thank you for joining the waitlist!</div>
-            </form>
-        </div>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfDEjfkW6hObvBmM31LJR1mW6CvXAI9k_sZZSOfukPDWPczuw/viewform?embedded=true&theme=dark" width="640" height="821" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </section>
 
     <!-- Footer -->
